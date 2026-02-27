@@ -1,0 +1,50 @@
+@keyframes classicFade {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-classicFade {
+  animation: classicFade 1.6s ease-out forwards;
+}
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-wave {
+  animation: wave 2s ease-in-out infinite;
+}
+@keyframes pauseSpin360 {
+  0% { transform: rotate(0deg); }       /* Start */
+  45% { transform: rotate(180deg); }    /* Midway */
+  /* 47.5% { transform: rotate(180deg); }  Pause at 180° for 0.5s */
+  95% { transform: rotate(360deg); }    /* End of spin */
+  97.5% { transform: rotate(360deg); }  /* Pause at 360° for 0.5s */
+  100% { transform: rotate(0deg); }     /* Loop back to start */
+}
+
+.animate-pauseSpin360 {
+  animation: pauseSpin360 20s linear infinite;
+}
+
+@keyframes dropdown {
+  0% {
+    transform: scaleY(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.animate-dropdown {
+  animation: dropdown 0.3s ease-out forwards;
+  transform-origin: top;
+}
