@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../assets/Circle.png";
-import WhiteLogo from "../assets/Circle 1.png";
+import Logo from "../assets/Logo.png";
+import WhiteLogo from "../assets/WhiteLogo.png";
 
 
 import '../App.css';
